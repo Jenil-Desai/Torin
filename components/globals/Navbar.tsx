@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react';
+import WalletConnectButton from './AppWalletButton';
 
 export default function Navbar() {
   return (
@@ -18,9 +19,7 @@ export default function Navbar() {
                 Go to Create Token
               </Button>
             </Link>
-            <Button className="p-2 rounded-xl text-base bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
-              Connect Wallet
-            </Button>
+            <WalletConnectButton />
           </div>
         </div>
       </div>
