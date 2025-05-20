@@ -1,4 +1,4 @@
-import { Button } from '@headlessui/react';
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react';
 
@@ -14,7 +14,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center space-x-4">
             <Link href="/create">
-              <Button className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary">
+              <Button variant={"ghost"} className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary">
                 Go to Create Token
               </Button>
             </Link>
