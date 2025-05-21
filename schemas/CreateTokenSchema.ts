@@ -3,7 +3,7 @@ import { z } from 'zod';
 export const createTokenSchema = z.object({
   name: z.string().min(3, { message: 'Token name is required' }),
   symbol: z.string().min(3, { message: 'Token symbol is required' }),
-  imageUrl: z.string().url({ message: 'Invalid URL format' }).optional(),
+  imageUrl: z.string().url({ message: 'Invalid URL format' }),
   initialSupply: z
     .coerce
     .number()

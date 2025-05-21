@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useWallet } from "@solana/wallet-adapter-react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import Image from "next/image";
 import { WalletName } from "@solana/wallet-adapter-base";
 
@@ -49,6 +49,9 @@ export default function WalletConnectButton() {
           )}
 
           <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Select An Wallet</DialogTitle>
+            </DialogHeader>
             <div className="flex w-full justify-center items-center p-6">
               <div className="flex flex-col justify-start items-center space-y-5 w-[300px] md:w-[400px] overflow-y-auto">
                 {wallets.map((wallet) => (
