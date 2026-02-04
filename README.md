@@ -1,4 +1,4 @@
-# 🚀 Torin – Solana Token Launchpad, Simplified
+# 🚀 Torin – Solana Token Launchpad,Simplified
 
 **Torin** is a lightweight and secure token launchpad built on the Solana blockchain. Designed for developers, startups, and Web3 enthusiasts, Torin makes it easy to launch SPL tokens on devnet or mainnet in just a few clicks — no CLI or in-depth blockchain knowledge required.
 
